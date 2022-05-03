@@ -14,9 +14,14 @@ namespace Trendyoluygulamasi.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Anasayfa : ContentPage
     {
+        public ICommand ScrollListCommand { get; set; }
         public Anasayfa()
         {
             InitializeComponent();
+        }
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new LoginPage());
         }
     }
 }
