@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Trendyoluygulamasi.Views.Anasayfa"
              xmlns:viewModels="clr-namespace:Trendyoluygulamasi.ViewModels"
-             
+             xmlns:tabView ="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              >
+
+
+
     <ContentPage.BindingContext>
         <viewModels:AnasayfaViewModel></viewModels:AnasayfaViewModel>
     </ContentPage.BindingContext>
@@ -23,12 +27,40 @@
         </Frame>
 
     </Shell.TitleView>
+    <ContentPage.Content>
+        <tabView:SfTabView EnableSwiping="False" BackgroundColor="Transparent" TabHeaderBackgroundColor="White" TabHeight="40" TabWidth="125">
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings
+                    Color="DarkOrange" 
+                    Position="Bottom" 
+                    AnimationDuration="150"
+                    StrokeThickness="3"/>
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            
+            <tabView:SfTabItem Title="Kadın" SelectionColor="Orange" TitleFontAttributes="Bold" TitleFontColor="#a5a5a5">
+            <tabView:SfTabItem.Content>
+                <Label Text="deneme"/>
+            </tabView:SfTabItem.Content>
 
+        </tabView:SfTabItem>
+           
+            <tabView:SfTabItem Title="Erkek" SelectionColor="DarkOrange" TitleFontAttributes="Bold" TitleFontColor="#a5a5a5">
+                <tabView:SfTabItem.Content>
+                    <Label Text="deneme"/>
+                </tabView:SfTabItem.Content>
 
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Tüm Kategoriler" SelectionColor="DarkOrange" TitleFontAttributes="Bold" TitleFontColor="#a5a5a5" >
+                <tabView:SfTabItem.Content>
+                    <Label Text="deneme"/>
+                </tabView:SfTabItem.Content>
 
+           
 
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
 
-
+</ContentPage.Content>
 
 
 
