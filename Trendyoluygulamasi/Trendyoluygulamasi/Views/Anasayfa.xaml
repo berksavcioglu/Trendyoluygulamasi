@@ -74,6 +74,35 @@
                                         </Grid>
                                     </Frame>
                                 </StackLayout>
+                                <Label Text="Yeni Hizmetleri Keşfet!" Margin="10,0,0,0" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                                <FlexLayout JustifyContent="SpaceAround" AlignContent="Center" HeightRequest="110" BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame Padding="0" BackgroundColor="White"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="hizlimarket.png" BackgroundColor="LightGreen" Aspect="Fill"/>
+                                        </Frame>
+                                        <Label Text="Hızlı Market" FontSize="15" CharacterSpacing="-1" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White"  Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="hamburger.jpg" BackgroundColor="Pink" />
+                                        </Frame>
+                                        <Label Text="Yemek" FontSize="15" CharacterSpacing="0" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White" Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="alsatkazan.png" BackgroundColor="LightBlue"/>
+                                        </Frame>
+                                        <Label Text="Al,Sat,Kazan" FontSize="15" CharacterSpacing="-1" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White" Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="kategoriler.png" BackgroundColor="PeachPuff"/>
+                                        </Frame>
+                                        <Label Text="Kategoriler" FontSize="15" CharacterSpacing="0" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+
+                                </FlexLayout>
                             </StackLayout>
                         </ScrollView>
                     </StackLayout>
