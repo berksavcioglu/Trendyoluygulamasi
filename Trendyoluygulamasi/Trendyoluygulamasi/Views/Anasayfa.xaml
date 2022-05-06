@@ -39,8 +39,45 @@
             
             <tabView:SfTabItem Title="Kadın" SelectionColor="Orange" TitleFontAttributes="Bold" TitleFontColor="#a5a5a5">
             <tabView:SfTabItem.Content>
-                <Label Text="deneme"/>
-            </tabView:SfTabItem.Content>
+                    <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+                        <ScrollView VerticalScrollBarVisibility="Never">
+                            <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+                                
+                                <StackLayout BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="390" HeightRequest="110" Margin="0,10,0,0">
+                                    <Frame Padding="0" CornerRadius="10">
+                                        <Grid>
+
+                                            <CarouselView x:Name="Carouselürün"     HeightRequest="100"
+                                                  IndicatorView="carouselAdIndicator"
+                        ItemsSource="{Binding CarouselItems}"
+                        >
+                                                <CarouselView.ItemTemplate>
+                                                    <DataTemplate>
+
+                                                        <ImageButton BackgroundColor="Pink"  Source="{Binding .}" VerticalOptions="FillAndExpand" Aspect="Fill"/>
+
+                                                    </DataTemplate>
+                                                </CarouselView.ItemTemplate>
+
+                                            </CarouselView>
+
+                                            <IndicatorView x:Name="carouselAdIndicator"
+                                                   BackgroundColor="Black" Opacity="0.7"
+                                                   HeightRequest="15"
+                                                   MaximumVisible="7"
+                                                   VerticalOptions="End"
+                                                   HorizontalOptions="Center"
+                                                   Margin="0,0,0,10"
+                                                   IndicatorColor="LightGray"
+                                                   SelectedIndicatorColor="White"
+                       />
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
 
         </tabView:SfTabItem>
            
