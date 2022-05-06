@@ -103,6 +103,21 @@
                                     </StackLayout>
 
                                 </FlexLayout>
+                                <FlexLayout JustifyContent="SpaceAround" AlignContent="Center" HeightRequest="100"  BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Margin="-1" BackgroundColor="Transparent" WidthRequest="200">
+                                        <Frame Padding="-1" BackgroundColor="Transparent"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="buyukbaharkampanyasiii.png" WidthRequest="200" HeightRequest="100" BackgroundColor="Transparent" Aspect="Fill"/>
+                                        </Frame>
+                                       
+                                    </StackLayout>
+                                    <StackLayout Margin="-1" BackgroundColor="Transparent" WidthRequest="200">
+                                        <Frame Padding="-1" BackgroundColor="Transparent"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="superegitimgunleri.png" WidthRequest="200" HeightRequest="100" BackgroundColor="Transparent" Aspect="Fill"/>
+                                        </Frame>
+                                        
+                                    </StackLayout>
+                                </FlexLayout>
+                                <Label Text="Sana Özel Ürünler" Margin="10,0,0,0" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
                             </StackLayout>
                         </ScrollView>
                     </StackLayout>
