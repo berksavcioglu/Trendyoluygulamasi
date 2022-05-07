@@ -189,6 +189,35 @@
                                         </CollectionView.ItemTemplate>
                                     </CollectionView>
                                 </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty411/campaign/banners/original/604763/39e0bba2d4_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty417/campaign/banners/original/604822/bbf1f4fa99_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604231/e52d25af6b_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty413/campaign/banners/original/602312/95c4f37fc7_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty390/campaign/banners/original/603009/e85192fa32_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
 
                             </StackLayout>
                         </ScrollView>
