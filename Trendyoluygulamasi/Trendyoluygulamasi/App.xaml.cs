@@ -14,7 +14,7 @@ namespace Trendyoluygulamasi
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new TabPage();
         }
 
         protected override void OnStart()
