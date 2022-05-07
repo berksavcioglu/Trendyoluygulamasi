@@ -49,7 +49,7 @@ namespace Trendyoluygulamasi.Data
                 },
                 new Ürünmodel{
                      Ürünismi = "Nike Air Jordan",
-                    Tanım = "1 Retro High Og 'rebellionaire ' Erkek Spor Ayakkabı 555088-036",
+                    Tanım = "Erkek Spor Ayakkabı",
                     Kategori = new Kategori(){ CategoryId=1,CategoryName = "ayakkabı"},
                     Marka = "Nike",
                     Fotograf = new List<Ürünfoto>(){

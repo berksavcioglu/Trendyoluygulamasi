@@ -7,16 +7,16 @@ using Trendyoluygulamasi.Models;
 
 namespace Trendyoluygulamasi.Data
 {
-    public static class CartData
+    public static class SepetData
     {
-        public static ObservableCollection<Cartmodel> Products { get { return products; } }
-        public static ObservableCollection<Cartmodel> products;
+        public static ObservableCollection<Sepetmodel> Products { get { return products; } }
+        public static ObservableCollection<Sepetmodel> products;
 
-        public static ObservableCollection<Cartmodel> CreateCart()
+        public static ObservableCollection<Sepetmodel> CreateCart()
         {
             if (products == null)
             {
-                products = new ObservableCollection<Cartmodel>();
+                products = new ObservableCollection<Sepetmodel>();
             }
             return Products;
         }
@@ -29,16 +29,16 @@ namespace Trendyoluygulamasi.Data
                 data.Count += 1;
                 return;
             }
-            Products.Add(new Cartmodel()
+            Products.Add(new Sepetmodel()
             {
                 Product = product
             });
 
         }
-        public static bool AlreadyExists(Cartmodel cartModel)
+        public static bool AlreadyExists(Sepetmodel sepetModel)
         {
 
-            return cartModel != null ? false : true;
+            return sepetModel != null ? false : true;
         }
         public static bool IsNotEmpty()
         {

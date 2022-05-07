@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Trendyoluygulamasi.Models
 {
-    public class Cartmodel
+    public class Sepetmodel
     {
-        public Cartmodel()
+        public Sepetmodel()
         {
             Count = 1;
         }

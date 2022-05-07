@@ -13,7 +13,7 @@ namespace Trendyoluygulamasi.ViewModels
         {
             AddProductToCart = new Command((product) =>
             {
-                CartData.AddProduct((Ürünmodel)product);
+                SepetData.AddProduct((Ürünmodel)product);
 
             });
         }
