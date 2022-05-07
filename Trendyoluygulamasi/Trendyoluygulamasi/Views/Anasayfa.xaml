@@ -219,6 +219,79 @@
                                     </Frame>
                                 </StackLayout>
 
+                                <StackLayout Orientation="Vertical">
+                                    <Grid>
+                                        <Label Text="En Çok Satanlar" Margin="10,0,0,0" FontSize="Body" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start"/>
+                                        <StackLayout HorizontalOptions="End" VerticalOptions="End">
+                                            <Label Text="Tüm Ürünler!" Margin="0,0,15,0" TextColor="Orange"/>
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer/>
+                                            </StackLayout.GestureRecognizers>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                <StackLayout HeightRequest="260" Margin="10,10,0,10" BackgroundColor="Transparent">
+                                    <CollectionView BackgroundColor="Transparent"
+                                                    x:Name="ProductCollectionn"
+                                            ItemsSource="{Binding RandomProducts}"
+                                                    
+                                                    >
+                                        <CollectionView.ItemsLayout>
+                                            <LinearItemsLayout
+                                                    Orientation="Horizontal"/>
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackLayout Orientation="Horizontal" Margin="0,0,15,0" VerticalOptions="StartAndExpand">
+                                                    <StackLayout.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="StackLayoutProductClick" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                                    </StackLayout.GestureRecognizers>
+                                                    <StackLayout VerticalOptions="Start" BackgroundColor="Transparent" WidthRequest="150">
+
+                                                        <Frame VerticalOptions="FillAndExpand"  Padding="0" CornerRadius="15" HeightRequest="250">
+                                                            <Grid>
+
+                                                                <ImageButton Source="{Binding İlkfoto.Url}" CommandParameter="{Binding .}" Clicked="ImageProductClick" VerticalOptions="StartAndExpand" HeightRequest="170" Aspect="AspectFill"/>
+                                                                <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="30" WidthRequest="30" Margin="14">
+                                                                    <Frame VerticalOptions="FillAndExpand" HeightRequest="15" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="15">
+                                                                        <Image Source="yildiz.png"/>
+                                                                    </Frame>
+                                                                </StackLayout>
+                                                                <StackLayout VerticalOptions="EndAndExpand">
+                                                                    <Label Margin="5,0,0,0" LineBreakMode="TailTruncation" MaxLines="2" FontAttributes="Bold"  TextColor="Black">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Marka}" FontAttributes="Bold" FontSize="14"/>
+                                                                                <Span Text=" " />
+                                                                                <Span Text="{Binding Tanım}" TextColor="#737373" FontAttributes="Bold" FontSize="12"/>
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                    <Label Margin="15,0,0,10">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Fiyatı}" TextColor="Orange" FontAttributes="Bold"/>
+                                                                                <Span Text=" TL" TextColor="Orange" FontAttributes="Bold"/>
+
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                </StackLayout>
+                                                            </Grid>
+                                                        </Frame>
+                                                    </StackLayout>
+                                                </StackLayout>
+
+
+
+
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </StackLayout>
+
                             </StackLayout>
                         </ScrollView>
                     </StackLayout>
