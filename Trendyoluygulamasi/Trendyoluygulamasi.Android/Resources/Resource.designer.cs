@@ -16854,7 +16854,10 @@ namespace Trendyoluygulamasi.Droid
 			public const int xamarin_logo = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int yildizz = 2131165380;
+			public const int yildiz = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int yildizz = 2131165381;
 			
 			static Drawable()
 			{
