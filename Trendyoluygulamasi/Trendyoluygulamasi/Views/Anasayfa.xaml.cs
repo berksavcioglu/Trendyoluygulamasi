@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Trendyoluygulamasi.Views.NavigationPages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -35,7 +36,23 @@ namespace Trendyoluygulamasi.Views
         {
             this.Navigation.PushModalAsync(new LoginPage());
         }
+        async private void StackLayoutProductClick(object sender, EventArgs e)
+        {
+            StackLayout data = (StackLayout)sender;
+            var gesture = data.GestureRecognizers[0] as TapGestureRecognizer;
+            var product = gesture.CommandParameter;
+            await this.Navigation.PushModalAsync(new ÜrünNavigation(new Üründetay(product)), false);
 
-        
+
+        }
+        async private void ImageProductClick(object sender, EventArgs e)
+        {
+            ImageButton data = (ImageButton)sender;
+            var product = data.CommandParameter;
+            await this.Navigation.PushModalAsync(new ÜrünNavigation(new Üründetay(product)), false);
+
+
+        }
+
     }
 }
