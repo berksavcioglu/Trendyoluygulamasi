@@ -3,7 +3,11 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:Trendyoluygulamasi.Views"
        Title="Trendyoluygulamasi"
-       x:Class="Trendyoluygulamasi.AppShell">
+       x:Class="Trendyoluygulamasi.AppShell"
+       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            
+>
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -19,10 +23,10 @@
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="Gray"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="Black"/>
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -30,8 +34,13 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="Anasayfa" ContentTemplate="{DataTemplate local:Anasayfa}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+       
+        <ShellContent Title="Anasayfa" Icon="anasayfa.png" Route="Anasayfa" ContentTemplate="{DataTemplate local:Anasayfa}" />
+        <ShellContent Title="Trendyol GO" Icon="go.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Favorilerim" Icon="kalp.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Sepetim" Icon="sepetim.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Hesabım" Icon="hesabim.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        
     </TabBar>
 
     <!--
