@@ -18,6 +18,7 @@ namespace Trendyoluygulamasi.Views
         AnasayfaNavigation _anasayfaNavigation;
         AnasayfaNavigation _favoriNavigation;
         AnasayfaNavigation _sepetimNavigation;
+        AnasayfaNavigation _yemeksayfasiNavigation;
         ContentPage _hesabim;
         ContentPage _sepetim;
         ContentPage _favorilerim;
@@ -48,6 +49,7 @@ namespace Trendyoluygulamasi.Views
                 _favorilerim = new LoginFavorilerim();
             }
             _yemeksayfasi = new Yemeksayfasi();
+            _yemeksayfasiNavigation = new AnasayfaNavigation(_yemeksayfasi);
             _hesabimNav = new NavigationBar(_hesabim);
             _sepetimNavigation = new AnasayfaNavigation(_sepetim);
             _favoriNavigation = new AnasayfaNavigation(_favorilerim);
@@ -61,6 +63,10 @@ namespace Trendyoluygulamasi.Views
             _yemeksayfasi.IconImageSource = "go.png";
             _hesabimNav.Title = "Hesabım";
             _hesabimNav.IconImageSource = "hesabim.png";
+            _yemeksayfasiNavigation.Title = "Trendyol Go";
+            _yemeksayfasiNavigation.IconImageSource = "go.png";
+            _yemeksayfasiNavigation.BarBackgroundColor = Color.White;
+            _yemeksayfasiNavigation.BarTextColor = Color.Black;
             _sepetim.IconImageSource = "sepetim.png";
             _sepetim.Title = "Sepetim";
             _sepetimNavigation.Title = "Sepetim";
@@ -78,7 +84,7 @@ namespace Trendyoluygulamasi.Views
             _anasayfaNavigation.IconImageSource = "anasayfa.png";
 
             this.Children.Add(_anasayfaNavigation);
-            this.Children.Add(_yemeksayfasi);
+            this.Children.Add(_yemeksayfasiNavigation);
             this.Children.Add(_favoriNavigation);
             this.Children.Add(_sepetimNavigation);
             this.Children.Add(_hesabimNav);
