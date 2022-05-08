@@ -108,9 +108,13 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <StackLayout Grid.Column="1" Orientation="Horizontal" BackgroundColor="Transparent" >
-                                    <Label Text="{Binding Fiyatı}" VerticalOptions="Center" HorizontalOptions="Start" TextColor="DarkOrange" FontAttributes="Bold"/>
-                                    
+                                    <Label Text="{Binding Fiyatı }" VerticalOptions="Center" HorizontalOptions="Start" TextColor="DarkOrange" FontAttributes="Bold"/>
+                                    <Label Text="TL" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Orange" FontAttributes="Bold"/>
+
+
                                 </StackLayout>
+                                
+
                                 <Button Grid.Column="2" Margin="0,8,15,8" Text="Sepete Ekle" TextTransform="None" FontSize="17" FontAttributes="Bold" TextColor="White" CharacterSpacing="1" CornerRadius="5" HeightRequest="55" 
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ÜrünDetayViewModel}}, Path=AddProductToCart}" CommandParameter="{Binding .}"
                                         BackgroundColor="#f27a1b" Clicked="ClickCartButton" />
