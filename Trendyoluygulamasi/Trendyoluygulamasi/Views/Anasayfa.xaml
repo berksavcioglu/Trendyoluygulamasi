@@ -320,6 +320,7 @@
                                         <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/589565/f624505636_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
+                                
 
                             </StackLayout>
                         </ScrollView>
@@ -330,7 +331,289 @@
            
             <tabView:SfTabItem Title="Erkek" SelectionColor="DarkOrange" TitleFontAttributes="Bold" TitleFontColor="#a5a5a5">
                 <tabView:SfTabItem.Content>
-                    <Label Text="deneme"/>
+                    <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+                        <ScrollView VerticalScrollBarVisibility="Never">
+                            <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+                                <StackLayout BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="390" HeightRequest="110" Margin="0,10,0,0">
+                                    <Frame Padding="0" CornerRadius="10">
+                                        <Grid>
+
+                                            <CarouselView x:Name="Carouselürünn"     HeightRequest="100"
+                                                  IndicatorView="carouselAdIndicatorMan"
+                        ItemsSource="{Binding CarouselItems}"
+                        >
+                                                <CarouselView.ItemTemplate>
+                                                    <DataTemplate>
+
+                                                        <ImageButton BackgroundColor="Pink"  Source="{Binding .}" VerticalOptions="FillAndExpand" Aspect="Fill"/>
+
+                                                    </DataTemplate>
+                                                </CarouselView.ItemTemplate>
+
+                                            </CarouselView>
+
+                                            <IndicatorView x:Name="carouselAdIndicatorMan"
+                                                   BackgroundColor="Black" Opacity="0.7"
+                                                   HeightRequest="15"
+                                                   MaximumVisible="7"
+                                                   VerticalOptions="End"
+                                                   HorizontalOptions="Center"
+                                                   Margin="0,0,0,10"
+                                                   IndicatorColor="LightGray"
+                                                   SelectedIndicatorColor="White"
+                       />
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                                <Label Text="Yeni Hizmetleri Keşfet!" Margin="10,0,0,0" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                                <FlexLayout JustifyContent="SpaceAround" AlignContent="Center" HeightRequest="110" BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame Padding="0" BackgroundColor="White"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="hizlimarket.png" BackgroundColor="LightGreen" Aspect="Fill"/>
+                                        </Frame>
+                                        <Label Text="Hızlı Market" FontSize="15" CharacterSpacing="-1" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White"  Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="hamburger.jpg" BackgroundColor="Pink" />
+                                        </Frame>
+                                        <Label Text="Yemek" FontSize="15" CharacterSpacing="0" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White" Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="alsatkazan.png" BackgroundColor="LightBlue"/>
+                                        </Frame>
+                                        <Label Text="Al,Sat,Kazan" FontSize="15" CharacterSpacing="-1" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,5" BackgroundColor="Transparent" WidthRequest="75">
+                                        <Frame BackgroundColor="White" Padding="0" CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="kategoriler.png" BackgroundColor="PeachPuff"/>
+                                        </Frame>
+                                        <Label Text="Kategoriler" FontSize="15" CharacterSpacing="0" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                                    </StackLayout>
+
+                                </FlexLayout>
+                                <FlexLayout JustifyContent="SpaceAround" AlignContent="Center" HeightRequest="100"  BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Margin="-1" BackgroundColor="Transparent" WidthRequest="200">
+                                        <Frame Padding="-1" BackgroundColor="Transparent"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="buyukbaharkampanyasiii.png" WidthRequest="200" HeightRequest="100" BackgroundColor="Transparent" Aspect="Fill"/>
+                                        </Frame>
+
+                                    </StackLayout>
+                                    <StackLayout Margin="-1" BackgroundColor="Transparent" WidthRequest="200">
+                                        <Frame Padding="-1" BackgroundColor="Transparent"  CornerRadius="15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                            <ImageButton Source="superegitimgunleri.png" WidthRequest="200" HeightRequest="100" BackgroundColor="Transparent" Aspect="Fill"/>
+                                        </Frame>
+
+                                    </StackLayout>
+                                </FlexLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Grid>
+                                        <Label Text="Size Özel Ürünler" Margin="10,0,0,0" FontSize="Body" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start"/>
+                                        <StackLayout HorizontalOptions="End" VerticalOptions="End">
+                                            <Label Text="Tüm Ürünler" Margin="0,0,15,0" TextColor="Orange"/>
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer/>
+                                            </StackLayout.GestureRecognizers>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                <StackLayout HeightRequest="260" Margin="10,10,0,10" BackgroundColor="Transparent">
+                                    <CollectionView BackgroundColor="Transparent"
+                                                    x:Name="ProductCollectionMan"
+                                            ItemsSource="{Binding RandomProducts}"
+                                                    
+                                                    >
+                                        <CollectionView.ItemsLayout>
+                                            <LinearItemsLayout
+                                                    Orientation="Horizontal"/>
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackLayout Orientation="Horizontal" Margin="0,0,15,0" VerticalOptions="StartAndExpand">
+                                                    <StackLayout.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="StackLayoutProductClick" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                                    </StackLayout.GestureRecognizers>
+                                                    <StackLayout VerticalOptions="Start" BackgroundColor="Transparent" WidthRequest="150">
+
+                                                        <Frame VerticalOptions="FillAndExpand"  Padding="0" CornerRadius="15" HeightRequest="250">
+                                                            <Grid>
+
+                                                                <ImageButton Source="{Binding İlkfoto.Url}" CommandParameter="{Binding .}" Clicked="ImageProductClick" VerticalOptions="StartAndExpand" HeightRequest="170" Aspect="AspectFill"/>
+                                                                <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="30" WidthRequest="30" Margin="14">
+                                                                    <Frame VerticalOptions="FillAndExpand" HeightRequest="15" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="15">
+                                                                        <Image Source="kalp.png"/>
+                                                                    </Frame>
+                                                                </StackLayout>
+                                                                <StackLayout VerticalOptions="EndAndExpand">
+                                                                    <Label Margin="5,0,0,0" LineBreakMode="TailTruncation" MaxLines="2" FontAttributes="Bold"  TextColor="Black">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Marka}" FontAttributes="Bold" FontSize="14"/>
+                                                                                <Span Text=" " />
+                                                                                <Span Text="{Binding Tanım}" TextColor="#737373" FontAttributes="Bold" FontSize="12"/>
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                    <Label Margin="15,0,0,10">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Fiyatı}" TextColor="Orange" FontAttributes="Bold"/>
+                                                                                <Span Text=" TL" TextColor="Orange" FontAttributes="Bold"/>
+
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                </StackLayout>
+                                                            </Grid>
+                                                        </Frame>
+                                                    </StackLayout>
+                                                </StackLayout>
+
+
+
+
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604230/b64778910c_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty419/campaign/banners/original/604888/9891b224be_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty412/campaign/banners/original/602884/a082f9f910_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty409/campaign/banners/original/604658/9c235e0943_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/589565/f624505636_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Grid>
+                                        <Label Text="En Çok Satanlar" Margin="10,0,0,0" FontSize="Body" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start"/>
+                                        <StackLayout HorizontalOptions="End" VerticalOptions="End">
+                                            <Label Text="Tüm Ürünler!" Margin="0,0,15,0" TextColor="Orange"/>
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer/>
+                                            </StackLayout.GestureRecognizers>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                <StackLayout HeightRequest="260" Margin="10,10,0,10" BackgroundColor="Transparent">
+                                    <CollectionView BackgroundColor="Transparent"
+                                                    x:Name="ProductCollectionMann"
+                                            ItemsSource="{Binding RandomProducts}"
+                                                    
+                                                    >
+                                        <CollectionView.ItemsLayout>
+                                            <LinearItemsLayout
+                                                    Orientation="Horizontal"/>
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackLayout Orientation="Horizontal" Margin="0,0,15,0" VerticalOptions="StartAndExpand">
+                                                    <StackLayout.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="StackLayoutProductClick" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                                    </StackLayout.GestureRecognizers>
+                                                    <StackLayout VerticalOptions="Start" BackgroundColor="Transparent" WidthRequest="150">
+
+                                                        <Frame VerticalOptions="FillAndExpand"  Padding="0" CornerRadius="15" HeightRequest="250">
+                                                            <Grid>
+
+                                                                <ImageButton Source="{Binding İlkfoto.Url}" CommandParameter="{Binding .}" Clicked="ImageProductClick" VerticalOptions="StartAndExpand" HeightRequest="170" Aspect="AspectFill"/>
+                                                                <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="30" WidthRequest="30" Margin="14">
+                                                                    <Frame VerticalOptions="FillAndExpand" HeightRequest="15" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="15">
+                                                                        <Image Source="yildiz.png"/>
+                                                                    </Frame>
+                                                                </StackLayout>
+                                                                <StackLayout VerticalOptions="EndAndExpand">
+                                                                    <Label Margin="5,0,0,0" LineBreakMode="TailTruncation" MaxLines="2" FontAttributes="Bold"  TextColor="Black">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Marka}" FontAttributes="Bold" FontSize="14"/>
+                                                                                <Span Text=" " />
+                                                                                <Span Text="{Binding Tanım}" TextColor="#737373" FontAttributes="Bold" FontSize="12"/>
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                    <Label Margin="15,0,0,10">
+                                                                        <Label.FormattedText>
+                                                                            <FormattedString>
+                                                                                <Span Text="{Binding Fiyatı}" TextColor="Orange" FontAttributes="Bold"/>
+                                                                                <Span Text=" TL" TextColor="Orange" FontAttributes="Bold"/>
+
+
+                                                                            </FormattedString>
+                                                                        </Label.FormattedText>
+                                                                    </Label>
+                                                                </StackLayout>
+                                                            </Grid>
+                                                        </Frame>
+                                                    </StackLayout>
+                                                </StackLayout>
+
+
+
+
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604230/b64778910c_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty419/campaign/banners/original/604888/9891b224be_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <!--#endregion-->
+                                <!--#region BigAd-->
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty412/campaign/banners/original/602884/a082f9f910_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty409/campaign/banners/original/604658/9c235e0943_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                                    <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
+                                        <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/589565/f624505636_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+
                 </tabView:SfTabItem.Content>
 
             </tabView:SfTabItem>
