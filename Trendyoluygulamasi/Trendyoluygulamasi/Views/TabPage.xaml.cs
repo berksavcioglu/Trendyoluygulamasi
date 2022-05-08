@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Trendyoluygulamasi.Views.Login;
 using Trendyoluygulamasi.Views.NavigationPages;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -43,9 +43,9 @@ namespace Trendyoluygulamasi.Views
             }
             else
             {
-                _hesabim = new LoginPage();
-                _sepetim = new LoginPage();
-                _favorilerim = new LoginPage();
+                _hesabim = new LoginHesabim();
+                _sepetim = new LoginSepetim();
+                _favorilerim = new LoginFavorilerim();
             }
             _yemeksayfasi = new Yemeksayfasi();
             _hesabimNav = new NavigationBar(_hesabim);

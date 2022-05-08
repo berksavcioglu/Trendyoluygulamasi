@@ -5,10 +5,96 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trendyoluygulamasi.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             xmlns:Renderer="clr-namespace:Trendyoluygulamasi.CustomRenderer"
+             Shell.NavBarIsVisible="False"
+             xmlns:ViewModels="clr-namespace:Trendyoluygulamasi.ViewModels">
+    <ContentPage.BindingContext>
+        <ViewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+
+
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        <StackLayout BackgroundColor="White">
+            <Grid>
+                <StackLayout  Padding="0" Margin="0">
+                    <Frame HeightRequest="250" HorizontalOptions="FillAndExpand">
+                        <Frame.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#f75d53"
+                                              Offset="0.4"/>
+
+                                <GradientStop Color="#fb6b2b"
+                                              Offset="0.7"/>
+                                <GradientStop Color="#ff751c"
+                                              Offset="1.0"/>
+
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <StackLayout Padding="80,10">
+                            <Image Source="trendyol.png"/>
+                            <Label Text="    Yeni sezon trend ürünler seni bekliyor." TextColor="White" FontSize="10"/>
+                        </StackLayout>
+                        
+                        </Frame>
+                </StackLayout>
+                
+                
+                <StackLayout Margin="15,190,15,0" >
+                    <Frame CornerRadius="15" BackgroundColor="White" HasShadow="True" HeightRequest="360" HorizontalOptions="FillAndExpand" Padding="20,20,20,0">
+                        <StackLayout>
+                            <Grid HeightRequest="58">
+                                <Frame HasShadow="False" CornerRadius="5"  BorderColor="#dddddd" BackgroundColor="#ffff" HeightRequest="15" WidthRequest="300" TabIndex="1" Padding="0,0,0,0">
+                                </Frame>
+                                <Renderer:CustomEntry Placeholder=" E-Posta" TextColor="Gray" Text="{Binding Username}" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </Grid>
+                            <Grid Margin="0,20,0,0" HeightRequest="58">
+                                <Frame HasShadow="False" CornerRadius="5"  BorderColor="#dddddd" BackgroundColor="#ffff" HeightRequest="15" WidthRequest="300" TabIndex="1" Padding="0,0,0,0">
+                                </Frame>
+                                <Renderer:CustomEntry Placeholder=" Şifre" Text="{Binding Password}" IsPassword="True" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </Grid>
+
+                            <StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                </StackLayout.GestureRecognizers>
+                                <Renderer:CustomLabel Margin="0,10,0,5" Text="Şifremi Unuttum" TextColor="#ff663a" HorizontalOptions="End"/>
+                            </StackLayout>
+                            <Button Margin="0,10,0,0" Text="GİRİŞ YAP" TextColor="White" Command="{Binding LoginCommand}" CharacterSpacing="1.5" CornerRadius="5" HeightRequest="55" BackgroundColor="#f27a1b"></Button>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <StackLayout  VerticalOptions="CenterAndExpand">
+                                    <Frame  Margin="0,10,25,15" Padding="10">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="facebook.png" WidthRequest="40" HeightRequest="40"/>
+                                            <Label Text="{Binding Facebook}" VerticalOptions="Center"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout WidthRequest="150" HeightRequest="80" VerticalOptions="CenterAndExpand">
+                                    <Frame HeightRequest="60" Margin="25,10,0,15" Padding="10">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="google.png" WidthRequest="40" HeightRequest="40"/>
+                                            <Label Text="{Binding Google}" VerticalOptions="Center"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                                <Label Text="Üye misin?" Margin="0,0,0,10"/>
+                                <StackLayout>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Register"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Label Text="Üye ol" TextColor="#ff663a"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

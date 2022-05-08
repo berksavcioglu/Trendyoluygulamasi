@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trendyoluygulamasi.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trendyoluygulamasi.iOS", "Trendyoluygulamasi\Trendyoluygulamasi.iOS\Trendyoluygulamasi.iOS.csproj", "{892D592A-C822-47D3-9800-537AF923EDD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trendyoluygulamasi", "Trendyoluygulamasi\Trendyoluygulamasi\Trendyoluygulamasi.csproj", "{29013B69-86B1-47FE-AF1C-2413975759B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trendyoluygulamasi", "Trendyoluygulamasi\Trendyoluygulamasi\Trendyoluygulamasi.csproj", "{29013B69-86B1-47FE-AF1C-2413975759B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E01C08BB-928A-4A6E-A2B4-C669542C1BA6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

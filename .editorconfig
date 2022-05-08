@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0108: Üye devralınmış üyeyi gizler; yeni anahtar sözcük eksik
+dotnet_diagnostic.CS0108.severity = none

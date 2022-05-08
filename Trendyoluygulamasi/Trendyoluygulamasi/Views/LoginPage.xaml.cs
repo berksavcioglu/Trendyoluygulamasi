@@ -17,5 +17,13 @@ namespace Trendyoluygulamasi.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new SifremiUnuttum());
+        }
+        private void Register(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new KayitOl());
+        }
     }
 }
