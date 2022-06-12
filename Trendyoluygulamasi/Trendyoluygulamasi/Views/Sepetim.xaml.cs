@@ -35,6 +35,7 @@ namespace Trendyoluygulamasi.Views
             BosList.IsVisible = false;
             SepetList.IsVisible = true;
         }
+    
         private void RouteLogingPage(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new LoginPage());

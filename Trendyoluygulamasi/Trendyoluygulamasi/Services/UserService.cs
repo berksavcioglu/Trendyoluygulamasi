@@ -16,7 +16,7 @@ namespace Trendyoluygulamasi.Services
 
         public UserService()
         {
-            _client = new FirebaseClient("https://trendyoluygulamasi-default-rtdb.firebaseio.com/");
+            _client = new FirebaseClient("https://trendyoluygulamasi-59d1f-default-rtdb.firebaseio.com/");
         }
         public async Task<bool> IsUserExists(string uname)
         {

@@ -8,6 +8,7 @@
         <viewModels:SepetimViewModel></viewModels:SepetimViewModel>
     </ContentPage.BindingContext>
     <ContentPage.Content>
+        <StackLayout>
         <ScrollView VerticalScrollBarVisibility="Never" BackgroundColor="#f5f5f5">
             <StackLayout>
                 <StackLayout x:Name="BosList">
@@ -174,5 +175,10 @@
             </StackLayout>
             
         </ScrollView>
+            
+        </StackLayout>
+
+
+
     </ContentPage.Content>
 </ContentPage>

@@ -10,6 +10,7 @@ namespace Trendyoluygulamasi.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
 
         bool isBusy = false;

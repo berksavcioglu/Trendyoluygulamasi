@@ -194,15 +194,13 @@
                                         <Image Source="https://cdn.dsmcdn.com/ty411/campaign/banners/original/604763/39e0bba2d4_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                               
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty417/campaign/banners/original/604822/bbf1f4fa99_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                                
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604231/e52d25af6b_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
@@ -296,15 +294,13 @@
                                         <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604230/b64778910c_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                                
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty419/campaign/banners/original/604888/9891b224be_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                                
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty412/campaign/banners/original/602884/a082f9f910_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
@@ -485,15 +481,13 @@
                                         <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604230/b64778910c_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                                
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty419/campaign/banners/original/604888/9891b224be_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                               
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty412/campaign/banners/original/602884/a082f9f910_0.jpg" BackgroundColor="Black" Aspect="Fill"/>
@@ -586,15 +580,13 @@
                                         <Image Source="https://cdn.dsmcdn.com/ty418/campaign/banners/original/604230/b64778910c_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                              
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty419/campaign/banners/original/604888/9891b224be_0_new.jpg" BackgroundColor="Black" Aspect="Fill"/>
                                     </Frame>
                                 </StackLayout>
-                                <!--#endregion-->
-                                <!--#region BigAd-->
+                                
                                 <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
                                     <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="0">
                                         <Image Source="https://cdn.dsmcdn.com/ty412/campaign/banners/original/602884/a082f9f910_0.jpg" BackgroundColor="Black" Aspect="Fill"/>

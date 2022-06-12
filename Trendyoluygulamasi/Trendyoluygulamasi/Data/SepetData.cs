@@ -44,7 +44,28 @@ namespace Trendyoluygulamasi.Data
         {
             return Products.Count != 0 ? true : false;
         }
+        public static void RemoveProduct(Ürünmodel product)
+        {
+            var count = 0;
+            var data = Products.Where(p => p.Product.ÜrünId == product.ÜrünId).SingleOrDefault();
+            if (data.Count == 1)
+            {
+                Products.Remove(data);
+                return;
+            }
+            else
+            {
+                count = data.Count - 1;
+                Products.Remove(data);
+                Products.Add(new Sepetmodel()
+                {
+                    Product = product,
+                    Count = count
+                });
+            }
 
+
+        }
     }
 
 }
