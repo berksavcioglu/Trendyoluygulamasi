@@ -16,5 +16,10 @@ namespace Trendyoluygulamasi.Views.Login
         {
             InitializeComponent();
         }
+         private void Urungorclick(object sender, EventArgs e)
+        {
+
+            this.Navigation.PushModalAsync(new LoginSepetim());
+        }
     }
 }

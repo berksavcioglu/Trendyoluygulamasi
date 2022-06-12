@@ -14,6 +14,7 @@ namespace Trendyoluygulamasi.Views.Login
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginSepetim : ContentPage
+       
     {
         public LoginSepetim()
         {
@@ -37,7 +38,7 @@ namespace Trendyoluygulamasi.Views.Login
             {
                 var context = (LoginSepetimViewModel)BindingContext;
                 context.UpdateCartCost();
-                
+                    
                     SepetList.IsVisible = false;
                     CostFlexLayout.IsVisible = false;
                     BosList.IsVisible = true;
