@@ -8,7 +8,7 @@ using System.Linq;
 using Trendyoluygulamasi.Data;
 using Trendyoluygulamasi.Extensions;
 using Xamarin.Forms;
-
+using System.Threading.Tasks;
 
 namespace Trendyoluygulamasi.ViewModels
 {
@@ -18,6 +18,8 @@ namespace Trendyoluygulamasi.ViewModels
         
 
         ObservableCollection<Sepetmodel> cartProducts;
+      
+
         public decimal SumOfCart
         {
             get
@@ -74,7 +76,7 @@ namespace Trendyoluygulamasi.ViewModels
             data.Shuffle();
             randomProducts = data;
         }
-        private void GetCartProduct()
+        public void GetCartProduct()
         {
             cartProducts = SepetData.CreateCart();
             OnPropertyChanged(nameof(SumOfCart));
@@ -91,6 +93,9 @@ namespace Trendyoluygulamasi.ViewModels
                 SumOfCart += item.Product.Fiyatı * item.Count;
             }
         }
+      
+
+      
 
         public Command AddProduct { get; set; }
         public Command RemoveProduct { get; set; }
